@@ -1,24 +1,24 @@
 {%load static%}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        {%block content%}
+        {%block title%}
             CINE LOCAL
-        {%end block%}
-        |Juan Jose Martinez
+        {%endblock%}
+         |Juan Jose Martinez
     </title>
-    <link rel="stylesheet" href="{% static 'css/styles.css'  %}">
+    <link rel="stylesheet" href={% static 'css/estilos.css'%}>
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <img src="logo.jpg" alt="LOGO DEL CINE">
-        </div>
+            <img src={% static 'image/logocine.jpg' %} alt="LOGO DEL CINE">
+        </div> 
 
         <nav>
             <ul class="nav-links">
@@ -35,7 +35,7 @@
         <div class="content">
             {%block content%}
 
-            {% endblock %}
+            {% endblock %}  
         </div>
         
     </header>
