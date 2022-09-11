@@ -92,3 +92,25 @@ body{
     transform: scale(1.1);
 
 }
+
+.content{
+    
+    margin:50px 30px;
+    
+}
+
+
+
+/* listado de peliculas */
+
+.father{
+    display:flex;
+}
+
+.columna{
+    background-color: #F0EABE;
+    color: #D2001A;
+    padding: 20px;
+    width: 350px;
+    margin: 10px;
+ }

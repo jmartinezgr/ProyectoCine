@@ -1,0 +1,24 @@
+{% extends 'layouts\layout.html' %}
+    
+{% block title%}    
+    {{title}}
+{%endblock%} 
+
+
+{% block content %}
+    {% for i in peliculas%}
+        <section class="father">
+            
+            {% for pelicula in i  %}
+                <div class="columna">
+                    
+                    <h1>{{pelicula.name}}</h1>
+                    <p>{{pelicula.abstract}}</p>
+
+                </div>
+                
+            {% endfor %}
+        </section>  
+    {% endfor %}
+{% endblock%}
+    

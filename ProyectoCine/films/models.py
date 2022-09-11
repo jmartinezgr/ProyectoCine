@@ -29,8 +29,8 @@ class age(models.Model):
 class film(models.Model):
     name = models.CharField(max_length=100,verbose_name="Nombre")
     duration = models.CharField(max_length=4,verbose_name="Duracion")
-    image = models.ImageField(default=None)
-    realese_date = models.TimeField(verbose_name="Fecha de Estreno")
+    image = models.ImageField(default=None,blank=True)
+    realese_date = models.DateField(verbose_name="Fecha de Estreno")
     clasification = models.ForeignKey("age",on_delete=models.CASCADE,verbose_name="Clasificacion")
     genero = models.ForeignKey("gener", on_delete=models.CASCADE,verbose_name="Genero")
     link = models.CharField(verbose_name="Trailer", default=None,max_length=1000)
