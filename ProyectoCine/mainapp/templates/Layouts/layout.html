@@ -9,7 +9,7 @@
     <title>
         {%block title%}
             CINE LOCAL
-        {%endblock%}
+        {%endblock%} 
          |Juan Jose Martinez
     </title>
     <link rel="stylesheet" href={% static 'css/estilos.css'%}>
@@ -31,13 +31,13 @@
             </ul>
         </nav>
         <a href="#" class="btn"><button>Ingresar</button></a>
-
-        <div class="content">
-            {%block content%}
-
-            {% endblock %}  
-        </div>
         
     </header>
+
+    <div class="content">
+        {%block content%}
+            <h1>Contenido no disponible</h1>
+        {% endblock %}  
+    </div>
 </body>
 </html>
