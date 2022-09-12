@@ -8,13 +8,15 @@
 {% block content %}
     {% for i in peliculas%}
         <section class="father">
-            
             {% for pelicula in i  %}
                 <div class="columna">
-                    
-                    <h1>{{pelicula.name}}</h1>
-                    <p>{{pelicula.abstract}}</p>
-
+                    {% if pelicula.image %}
+                        <div class="image">
+                            <img src="{{pelicula.image.url}}"/>
+                        </div> 
+                    {% else %}
+                        <h1>{{pelicula.name}}</h1>
+                    {% endif %}        
                 </div>
                 
             {% endfor %}

@@ -29,7 +29,7 @@ class age(models.Model):
 class film(models.Model):
     name = models.CharField(max_length=100,verbose_name="Nombre")
     duration = models.CharField(max_length=4,verbose_name="Duracion")
-    image = models.ImageField(default=None,blank=True)
+    image = models.ImageField(default=None,blank=True,upload_to="films")
     realese_date = models.DateField(verbose_name="Fecha de Estreno")
     clasification = models.ForeignKey("age",on_delete=models.CASCADE,verbose_name="Clasificacion")
     genero = models.ForeignKey("gener", on_delete=models.CASCADE,verbose_name="Genero")

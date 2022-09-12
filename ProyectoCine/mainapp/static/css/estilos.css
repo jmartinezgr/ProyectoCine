@@ -94,9 +94,8 @@ body{
 }
 
 .content{
-    
-    margin:50px 30px;
-    
+    margin:50px 35px;
+    margin-left:40px;
 }
 
 
@@ -110,7 +109,29 @@ body{
 .columna{
     background-color: #F0EABE;
     color: #D2001A;
-    padding: 20px;
     width: 350px;
-    margin: 10px;
- }
+    height: 400px;
+    margin: 5px;
+
+ }  
+
+.columna .image {
+    width: 100%;
+    height: 400px;
+}
+
+.columna .image img{
+    padding:0;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+    cursor:pointer;
+    transition: all 0.3;
+}   
+
+
+
+.columna .image img:hover{
+    transform: scale(1.1);
+}
+
