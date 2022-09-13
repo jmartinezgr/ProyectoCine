@@ -39,4 +39,74 @@
             <h1>Contenido no disponible</h1>
         {% endblock %}  
     </div>
+
+    <footer>
+        <div class="container-footer-all">
+            <div class="container-body">
+
+                <div class="column1">
+                    <h1>Mas información sobre mi</h1>
+                    <p align="justify">
+                        Soy estudiante de Ingenieria en sistemas en la Universidad Nacional de Colombia, ademas de ser un desarrollador con experiencia en el lenguaje python mas especificamente en el desarrollo de aplicaciones web con Django y SQL Server. Este es uno de mis proyectos personales donde hago uso de distintas habilidades desarrolladas a lo largo de mi aprendizaje.
+                    </p>
+                </div>
+
+                <div class="column2">
+
+                    <h1>Redes Sociales</h1>
+                    
+                    <div class="row">
+                        <a target="_blank" href="https://github.com/jmartinezgr">    
+                            <img src={% static 'image/GitHub_logo.png' %}>
+                        </a>
+                        <label>
+                            <a target="_blank" href="https://github.com/jmartinezgr">
+                                Mira mis codigos en GitHub
+                            </a>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <a target="_blank" href="https://www.instagram.com/_tinezj/">
+                            <img src={% static 'image/instagram.png' %}>
+                        </a>
+                        <label >
+                            <a target="_blank" href="https://www.instagram.com/_tinezj/">
+                                Contactame por Instagram
+                            </a>
+                        </label>
+                    </div>
+                    <div class="row">
+                        <a target="_blank" href="https://www.linkedin.com/in/juan-jose-martinez">
+                            <img src={% static 'image/l.png' %}>
+                        </a>
+                        <label>
+                            <a target="_blank" href="https://www.linkedin.com/in/juan-jose-martinez">
+                                Mira mi perfil en Linkedin
+                            </a>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="column3">
+                    <h1>Informacion de contacto</h1>
+                    
+                    <div class="row2">
+                        <img src={% static 'image/contact.png' %}>
+                        <label for="">josemargri3@gmail.com</label>
+                    </div>
+                    <div class="row2">
+                        <img src={% static 'image/smartphone.png' %}>
+                        <label for="">+57-3147485623</label>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+        <div class="container-footer">
+            <div class="copyright">
+                {%now "Y"%} &copy; Todos los derechos reservados | Juan Jose Martinez 
+            </div>
+        </div>
+    </footer>
 </html>
