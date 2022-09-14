@@ -31,8 +31,8 @@ class film(models.Model):
     duration = models.CharField(max_length=4,verbose_name="Duracion")
     image = models.ImageField(default=None,blank=True,upload_to="films")
     realese_date = models.DateField(verbose_name="Fecha de Estreno")
-    clasification = models.ForeignKey("age",on_delete=models.CASCADE,verbose_name="Clasificacion")
-    genero = models.ForeignKey("gener", on_delete=models.CASCADE,verbose_name="Genero")
+    clasification = models.ForeignKey("age",on_delete=models.CASCADE)
+    genero = models.ManyToManyField("gener", verbose_name=("Genero"))
     link = models.CharField(verbose_name="Trailer", default=None,max_length=1000)
     abstract = models.TextField(verbose_name="Resumen")
 

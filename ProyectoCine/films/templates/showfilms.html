@@ -13,6 +13,16 @@
                     {% if pelicula.image %}
                         <div class="image">
                             <img src="{{pelicula.image.url}}"/>
+                            <div class="capa">
+                                <label class="dispo">
+                                    <h4>
+                                        <a href="">
+                                            Ver disponibilidad
+                                        </a>
+                                    </h4>
+                                </label>
+                                <p>{{pelicula.name}}</p>
+                            </div>
                         </div> 
                     {% else %}
                         <h1>{{pelicula.name}}</h1>

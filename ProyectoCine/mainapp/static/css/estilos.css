@@ -12,11 +12,11 @@
 
 body{
     background-color: #FFFAE7;
-}
+}   
 
 .header{
-    /*color alternativo #D2001A */
-    background-color:#202020;
+    /*color alternativo #D2001A o #202020; */
+    background-color:#D2001A;
     display: flex;
     justify-content:space-between;
     align-items:center;
@@ -24,8 +24,6 @@ body{
     padding:5px 10%;
 }
 
-
-/* Estilos generales del header*/
 
 .header .logo{
     cursor:pointer;
@@ -70,7 +68,7 @@ body{
 }
 
 .header .nav-links li a:hover{
-    color:#FFDE00;
+    color:#202020;
 }
 
 /* Estilos del boton de ingreso*/
@@ -89,22 +87,24 @@ body{
 
 .header .btn button:hover{
     background-color:#FFFAE7 ;
-    color:#FFDE00;
+    color:#D2001A;
     transform: scale(1.1);
 
 }
-
 .content{
     margin:50px 35px;
     margin-left:40px;
 }
 
+/* Menu desplegable */
 
 
 /* listado de peliculas */
 
 .father{
     display:flex;
+    justify-content:center;
+    align-items: center;
 }
 
 .columna{
@@ -117,11 +117,16 @@ body{
     margin-top:12.5px;
     margin-bottom:12.5px;
     border-radius: 10px;
+    
  }  
 
 .columna .image {
-    width: 100%;
+    max-width: 348;
     height: 400px;
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+    transition: all 1s;
 }
 
 .columna .image img{
@@ -131,11 +136,48 @@ body{
     height: 400px;
     cursor:pointer;
     border-radius: 10px;
-    transition: all 0.3;
-}   
+    transition: all 300ms ease-out;
+}
 
+/*
 .columna .image img:hover{
-    transform: scale(1.1);
+    position:absolute;
+    height: 420px;
+    width:360px;
+}*/
+
+.columna .capa{
+    bottom:0;
+    width:100%;
+    height:20%;
+    background-color: rgba(248,248,255,0.6);  
+    border-radius: 10px;
+    opacity: 0;
+    position:absolute;
+    text-align:center;
+    transition: all 500ms ease-out;     
+    cursor:pointer;      
+}
+
+.image:hover >.capa{    
+   opacity: 1;
+}
+
+.capa label h4{
+    background-color:#D2001A;
+    color: #C7C7C7;
+    padding: 1px;
+    margin-bottom:10px;
+}
+
+.capa label a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+.capa p{
+    display: inline-flex;
+    font-size:15px;
 }
 
 /* Footer */
