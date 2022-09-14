@@ -12,11 +12,13 @@
                 <div class="columna">
                     {% if pelicula.image %}
                         <div class="image">
-                            <img src="{{pelicula.image.url}}"/>
+                            <a href={% url 'pelicula' pelicula.name%}>
+                                <img src="{{pelicula.image.url}}"/>
+                            </a>
                             <div class="capa">
                                 <label class="dispo">
                                     <h4>
-                                        <a href="">
+                                        <a href={% url 'pelicula' pelicula.name%}>
                                             Ver disponibilidad
                                         </a>
                                     </h4>
