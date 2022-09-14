@@ -6,16 +6,45 @@
 
 
 {% block content %}
-    <h3>{{pelicula.name}}</h3>
     
-    {{pelicula.link|safe}}
-    
-    <p>{{pelicula.abstract}}</p>
-        
-        {% for gener in genero %}
-            {{gener}}
-        {% endfor %}
-        <!--<iframe width="900" height="506" src="https://www.youtube.com/embed/4VJv_Z1LyH0" title="TREN BALA | Tráiler Oficial Subtitulado (HD)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
-        -->
-        
+    <div class="listado">
+        <div class="c1">
+            <img src="{{pelicula.image.url}}"/>
+        </div>   
+        <div class="c2">
+            <ul>
+                <h2>{{pelicula.name}}</h2>
+                <li>
+                    <strong> Titulo:</strong> {{pelicula.name}} 
+                </li>
+                <li>
+                    Titulo Original: {{pelicula.name}}
+                </li>
+                <li>
+                    Fecha de estreno: {{pelicula.realese_date}}
+                </li>
+                <li>
+                    Clasificacion: {{pelicula.clasification}}
+                </li>
+                <li>
+                    Duracion: {{pelicula.duration}} minutos
+                </li>
+                <li>
+                    Generos:
+                    {% for gener in genero %}
+                        {{gener}}
+                    {% endfor %}
+                </li>
+                <li>
+                    Pais: 
+                </li>
+            </ul>
+        </div>
+        <div class="c3">
+            {{pelicula.link|safe}}
+        </div>
+    </div> 
+    <p class="resumen">
+        {{pelicula.abstract}}
+    </p>
 {% endblock%}   

@@ -35,7 +35,7 @@ body{
     height: 60px;
     width: auto;
     border-radius: 50px;
-    transition: all 0.3;
+    transition: all 500ms;
 }
 
 .header .logo img:hover{
@@ -53,10 +53,11 @@ body{
     display: inline-flex;
     padding: 0 20px;
     flex-wrap: nowrap;
+    transition: all 800ms;
 }
 
 .header .nav-links li:hover{
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 
 
@@ -81,7 +82,7 @@ body{
     border:none;
     border-radius: 50px;
     cursor:pointer;
-    transition:all 0.3 ease 0s;
+    transition: all 500ms;
 
 }
 
@@ -180,6 +181,62 @@ body{
     font-size:15px;
 }
 
+/* Estilos pelicula individual*/
+
+.listado{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+.listado .c1{
+    max-width: 400px;
+}
+
+.listado .c1 img{   
+    float: right;
+    width: 350px;
+    height: 400px;
+}
+
+.listado .c2{
+    max-width: 500px;
+    height: 400px;
+    display: inline-block;
+}
+
+.listado h2{
+    color: #D2001A;
+    margin-left: 20px;
+}
+
+.listado .c2 ul{
+    margin-top: 10px;
+    list-style: none;
+    float: left;
+}
+
+.listado .c2 ul li{
+    margin-top: 10px;
+    margin-left:20px;
+    text-align: left;
+    margin-right: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #464242;
+}
+
+.listado .c3 iframe{
+    width: 730px;
+    height: 392.8px;
+}
+
+.resumen{
+    margin-top: 50px;
+    text-align: justify;
+}
+
 /* Footer */
 
 footer{
@@ -200,7 +257,6 @@ footer{
 .container-body{
     display: flex;
     justify-content:space-between;
-
 }
 
 .column1{
@@ -210,7 +266,6 @@ footer{
 
 .column1 h1{
     font-size: 22px;
-
 }
 
 .column1 p{
@@ -221,13 +276,10 @@ footer{
 
 .column2{
     max-width:400px;
-
-
 }
 
 .column2 h1{
     font-size:22px;
-
 }
 
 .column2 .row{
@@ -282,7 +334,6 @@ footer{
     display: flex;
     justify-content: center;
     padding:20px
-
 }
 
 .copyright{
