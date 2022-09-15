@@ -117,8 +117,7 @@ body{
     margin-left: 6.666px;
     margin-top:12.5px;
     margin-bottom:12.5px;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
  }  
 
 .columna .image {
@@ -178,7 +177,7 @@ body{
 
 .capa p{
     display: inline-flex;
-    font-size:15px;
+    font-size:14px;
 }
 
 /* Estilos pelicula individual*/
@@ -228,7 +227,7 @@ body{
 }
 
 .listado .c3 iframe{
-    width: 730px;
+    width: 720px;
     height: 392.8px;
 }
 
